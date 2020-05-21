@@ -6,7 +6,7 @@
     tools:context=".Views.SplashActivity">
 
     <ImageView
-        android:src="@drawable/logo"
+        android:src="@drawable/dump"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_centerInParent="true"
