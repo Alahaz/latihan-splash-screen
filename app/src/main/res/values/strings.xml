@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">splashScreen</string>
     <string name="sabar">Mohon menunggu</string>
+    <string name="beranda">BERANDA</string>
+    <string name="people">PEOPLE</string>
+    <string name="search">SEARCH</string>
 </resources>

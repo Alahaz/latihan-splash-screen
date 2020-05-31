@@ -1,4 +1,4 @@
-package com.ziesapp.splashscreen.Views
+package com.ziesapp.splashscreen.views
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -10,12 +10,12 @@ import com.ziesapp.splashscreen.R
 class SplashActivity : AppCompatActivity() {
 
     //pemesanan variabel
-    private lateinit var mDelayHandler:Handler
-    private var splashTime:Long = 3000
+    private lateinit var mDelayHandler: Handler
+    private var splashTime: Long = 3000
 
     //Method setelah splash berakhir
-    internal val mRunnable:Runnable = Runnable {
-        val intent = Intent(this@SplashActivity,MainActivity::class.java)
+    private val mRunnable: Runnable = Runnable {
+        val intent = Intent(this@SplashActivity, MainActivity::class.java)
         startActivity(intent)
         finish()
     }
@@ -28,6 +28,6 @@ class SplashActivity : AppCompatActivity() {
         mDelayHandler = Handler()
 
         //navigasi dengan durasi
-        mDelayHandler.postDelayed(mRunnable,splashTime)
+        mDelayHandler.postDelayed(mRunnable, splashTime)
     }
 }
